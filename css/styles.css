@@ -1,0 +1,70 @@
+/* Estilos básicos */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    display: inline-block; /* Adicionado para garantir que o efeito de hover funcione */
+}
+
+nav a:hover {
+    background-color: #6200ea;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.box {
+    background-color: #212121;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.images img {
+    max-width: 30%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.box {
+    animation: fadeIn 1s ease-in-out;
+}
+
